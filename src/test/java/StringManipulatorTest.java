@@ -7,6 +7,7 @@ class StringManipulatorTest {
     StringManipulator manipulator = new StringManipulator();
 
     @Test
+    @DisplayName("Reversed String test")
     void reverseString() {
         assertEquals("LEGNA",manipulator.reverseString("ANGEL"));
         assertEquals("NOI",manipulator.reverseString("ION"));
