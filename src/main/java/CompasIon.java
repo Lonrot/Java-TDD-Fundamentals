@@ -10,6 +10,7 @@ public class CompasIon {
         for (int i=0;i<4;i++){
             if (String.valueOf(point).equals(points[i])){
                 if (direction == Compass.Direction.LEFT){
+                    System.out.println("in Left");
                     if(i==0){
                         returnPoint = points[points.length-1];
                     }else{
@@ -17,16 +18,22 @@ public class CompasIon {
                     }
                 }
                 if(direction == Compass.Direction.RIGHT){
+                    System.out.println("in RIght");
                     if(i == points.length-1){
+                        System.out.println("in hard right");
                         returnPoint = points[0];
                     }else {
-                        returnPoint = points[i++];
+                        System.out.println("in simple right");
+                        returnPoint = points[i+1];
+
                     }
                 }
             }
         }
 
-        Compass.Point ret = Compass.Point.valueOf(returnPoint);
-        return ret;
+
+        System.out.println(returnPoint);
+
+        return Compass.Point.valueOf(returnPoint);
     }
 }
