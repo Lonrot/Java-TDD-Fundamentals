@@ -9,6 +9,7 @@ class CompassTest {
     @DisplayName("correctly rotates a compass point in a specified direction")
 
     void rotate() {
+
         assertAll(
                 ()-> assertEquals(Compass.Point.EAST, Compass.rotate(Compass.Point.NORTH, Compass.Direction.RIGHT)),
                 ()-> assertEquals(Compass.Point.SOUTH, Compass.rotate(Compass.Point.EAST, Compass.Direction.RIGHT)),

@@ -1,9 +1,11 @@
+import org.apache.commons.lang3.StringUtils;
+
 public class StringManipulator {
 
 
     public String reverseString(String input) {
         // TODO: Implement the logic to reverse the input string
-        return "";
+        return StringUtils.reverse(input);
     }
 
     public boolean isPalindrome(String input) {
