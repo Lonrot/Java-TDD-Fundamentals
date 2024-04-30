@@ -19,6 +19,5 @@ class CompassTest {
                 ()-> assertEquals(Compass.Point.EAST, Compass.rotate(Compass.Point.SOUTH, Compass.Direction.LEFT)),
                 ()-> assertEquals(Compass.Point.SOUTH, Compass.rotate(Compass.Point.WEST, Compass.Direction.LEFT))
         );
-
-}
+    }
 }
